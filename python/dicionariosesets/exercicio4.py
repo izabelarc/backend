@@ -1,10 +1,11 @@
 '''Refaça o programa anterior (exercicio3) e imprima a lista dos alunos aprovados em ordem decrescente (da maior
 média para a menor)'''
 
+import operator
+
 data = {}
 notas = []
 aprovados = []
-anterior = 0
 
 for y in range(4):
     name = input("Digite seu nome: ")
@@ -31,11 +32,7 @@ for y in range(4):
     if media >= 7:
         situation = "Aprovado"
         dic_aprovados = {"nome": name, "media": media}
-        if media >= anterior:
-            aprovados.append(dic_aprovados)
-        else: 
-            aprovados.insert(-1, dic_aprovados)
-        anterior = media
+        aprovados.append(dic_aprovados)
     else:
         situation = "Reprovado"
     data["situação"] = situation
@@ -51,4 +48,5 @@ for y in range(4):
         
     notas.clear()
     
+    aprovados = sorted(aprovados, key=operator.itemgetter("media"), reverse =True)
 print(aprovados)
