@@ -14,8 +14,9 @@ nomedalista.clear() exclui todos os itens da lista
 nomedalista.copy() retorna copia da lista
 x = nomedalista.count(nomedoitem) trás quantas vezes o item se repete na lista
 nomedalista.extend(nomelista2) adiciona uma lista a outra
-nomedalista.revert() inverte a lista toda'''
-
+nomedalista.revert() inverte a lista toda
+nomedalista.split() separa os elementos da lista de acordo com um separador predefinido ou um espaço
+x = nomedalista.intersection(nomeoutralista) trás os elementos que tem em comum nas duas listas'''
 '''#criando listas: 
 names = []
 
