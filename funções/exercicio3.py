@@ -2,14 +2,15 @@
 # Se for passado uma frase, a função deverá retornar o número de letras, espaços vazios e quantos
 # sinais de pontuação.
 
-'''def qtd(palavra):
+
+import string
+def qtd(palavra):
     total = len(palavra)
     return total
 
 texto = input("Digite uma palavra: ")
 result = qtd(texto)
-print(f"A palavra tem {result} letras")'''
-import string
+print(f"A palavra tem {result} caracteres")
 
 def contagem_frase(frase):
     letras = sum(c.isalpha() for c in frase)
