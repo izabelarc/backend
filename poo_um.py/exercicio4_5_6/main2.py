@@ -19,9 +19,9 @@ cachorro1 = Cachorro(
     raca="Golden",
     cor_pelo="Dourado",
     tamanho_pelo="Longo",
-    tem_dono= True,
-    
+    tem_dono= True,    
 )
+
 cachorro2 = Cachorro(
     nome_pop= "Cachorro",
     nome_cient= "Canis lupus familiaris",
