@@ -19,7 +19,7 @@ cachorro1 = Cachorro(
     raca="Golden",
     cor_pelo="Dourado",
     tamanho_pelo="Longo",
-    tem_dono= True
+    tem_dono= True,
     
 )
 cachorro2 = Cachorro(
@@ -30,8 +30,15 @@ cachorro2 = Cachorro(
     alimentacao= ["ração"],
     ameacado_extincao= False,
     raca="Yorkshire",
-    cor_pelo="Dourado",
+    cor_pelo="Dourado e preto",
     tamanho_pelo="Curto",
-    tem_dono= True
+    tem_dono= True,
 )
 
+
+cachorro1.comendo()
+cachorro2.comendo()
+cachorro1.latindo()
+cachorro2.latindo()
+cachorro1.dono()
+cachorro2.dono()
